@@ -35,6 +35,8 @@ chartData().then((data) => {
             "hsl(10, 79%, 65%)",
             "hsl(10, 79%, 65%)",
           ],
+          borderRadius: 4,
+          borderSkipped: false,
         },
       ],
     },

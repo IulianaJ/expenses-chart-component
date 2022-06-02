@@ -6,22 +6,85 @@
   box-sizing: border-box;
   font-family: "DM Sans";
 }
+
 :root {
   --dark-brown: hsl(25, 47%, 15%);
   --medium-brown: hsl(28, 10%, 53%);
   --cream: hsl(27, 66%, 92%);
-  --very-pale-orange: hsl(33, 100%, 98%);
+  --very-pale-orange: hsl(30, 100%, 98%);
   --orange: hsl(10, 79%, 65%);
 }
 
 body {
-  background-color: hsl(25, 67%, 88%);
+  background-color: var(--cream);
   min-height: 100vh;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 0.55rem;
 }
+
+.balance {
+  width: 22rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+  color: var(--cream);
+  background-color: var(--orange);
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance img {
+  width: 3.5rem;
+}
+
+.balance p {
+  font-size: 0.77rem;
+}
+
+.spendings {
+  width: 22rem;
+  height: 20rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--dark-brown);
+  background-color: var(--very-pale-orange);
+}
+
+.stats {
+  display: flex;
+  border-top: 0.12rem solid var(--cream);
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.stats p {
+  color: var(--medium-brown);
+  font-weight: 400;
+  font-size: 0.77rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.5rem;
+}
+
 .attribution,
 a {
   font-size: 11px;
   text-align: center;
   color: hsl(228, 45%, 44%);
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.right h4 {
+  font-size: 0.77rem;
 }

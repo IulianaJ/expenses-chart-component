@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
+/* Use CSS reset */
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* Set font-family on html*/
   font-family: "DM Sans";
 }
 
@@ -17,12 +22,17 @@
 
 body {
   background-color: var(--cream);
+  /*  When sizing things horizontally or vertically, it's better */
+  /* to apply styles in a top-down fashion. This approach facilitates */
+  /* better separation of styling concerns and produces a smaller CSS code footprint */
   min-height: 100vh;
   font-size: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* Remove duplicate rule */
   min-height: 100vh;
   gap: 0.55rem;
 }

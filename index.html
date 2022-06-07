@@ -18,40 +18,41 @@
 
   <!-- Accesibility report #2 -->
   <!-- Page content should be grouped under a <main> element -->
-  <article>
-    <!-- HTML report #1 -->
-    <!-- This section can be converted into a <header> -->
-    <!-- Make sure to use appropriate heading given the scale -->
-    <section class="balance">
-      <div>
-        <p>My balance</p>
-        <!-- Accesibility report #1 -->
-        <!-- Make sure you use the following heading elements -->
-        <!-- using each step of the scale (e.g. h1 - h6) -->
-        <h3>$921.48</h3>
-      </div>
-      <img src="./images/logo.svg" alt="logo" />
-    </section>
-
-    <!-- This <section> can be converted to an <article> -->
-    <!-- Make sure to add a heading element -->
-    <section class="spendings">
-      <div>
-        <h3>Spending - Last 7 days</h3>
-        <canvas id="myChart"></canvas>
-      </div>
-      <div class="stats">
+  <main>
+    <article>
+      <!-- HTML report #1 -->
+      <!-- This section can be converted into a <header> -->
+      <!-- Make sure to use appropriate heading given the scale -->
+      <section class="balance">
         <div>
-          <p>Total this month</p>
-          <h2>$478.33</h2>
+          <p>My balance</p>
+          <!-- Accesibility report #1 -->
+          <!-- Make sure you use the following heading elements -->
+          <!-- using each step of the scale (e.g. h1 - h6) -->
+          <h3>$921.48</h3>
         </div>
-        <div class="right">
-          <h4>+2.4%</h4>
-          <p>from last month</p>
+        <img src="./images/logo.svg" alt="logo" />
+      </section>
+      <!-- This <section> can be converted to an <article> -->
+      <!-- Make sure to add a heading element -->
+      <section class="spendings">
+        <div>
+          <h3>Spending - Last 7 days</h3>
+          <canvas id="myChart"></canvas>
         </div>
-      </div>
-    </section>
-  </article>
+        <div class="stats">
+          <div>
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="right">
+            <h4>+2.4%</h4>
+            <p>from last month</p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
 
   <footer class="attribution">
     Challenge by

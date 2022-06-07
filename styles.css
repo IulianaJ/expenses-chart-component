@@ -26,15 +26,23 @@ body {
   /* to apply styles in a top-down fashion. This approach facilitates */
   /* better separation of styling concerns and produces a smaller CSS code footprint */
   min-height: 100vh;
+  /* Use the default font-size (e.g. 16px) */
+  /* and adapt other properties that use the */
+  /* rem/em unit */
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 1.25rem;
 
   /* Remove duplicate rule */
   min-height: 100vh;
-  gap: 0.55rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .balance {
@@ -83,10 +91,14 @@ body {
   line-height: 1.5rem;
 }
 
+.attribution {
+  padding-block-end: 1.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .attribution,
 a {
-  font-size: 11px;
-  text-align: center;
   color: hsl(228, 45%, 44%);
 }
 

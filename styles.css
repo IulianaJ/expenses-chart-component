@@ -68,6 +68,8 @@ main {
   border-radius: 1rem;
   color: var(--dark-brown);
   background-color: var(--very-pale-orange);
+
+  /* Add some margin between article heading and bar chart */
 }
 
 .stats {

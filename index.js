@@ -13,7 +13,7 @@ const chartData = async () => {
   }
 };
 
-chartData().then(data => {
+chartData().then((data) => {
   const days = [];
   const amount = [];
 
@@ -23,8 +23,7 @@ chartData().then(data => {
   }
 
   // This variable is unused
-  // You can safely remove it
-  const barChart = new Chart(myChart, {
+  new Chart(myChart, {
     type: "bar",
     data: {
       labels: days,

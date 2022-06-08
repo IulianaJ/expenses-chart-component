@@ -28,9 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-
-  /* Remove duplicate rule */
-  min-height: 100vh;
 }
 
 main {
@@ -42,7 +39,7 @@ main {
 
 .balance {
   width: 22rem;
-  height: 6rem;
+  height: 3rem;
   padding: 1.5rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -61,6 +58,11 @@ main {
   font-size: 0.77rem;
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
 .spendings {
   width: 22rem;
   height: 20rem;
@@ -68,8 +70,14 @@ main {
   border-radius: 1rem;
   color: var(--dark-brown);
   background-color: var(--very-pale-orange);
-
+  margin-bottom: 1rem;
   /* Add some margin between article heading and bar chart */
+}
+
+.last-days {
+  margin: 0.75rem;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .stats {
@@ -88,6 +96,22 @@ main {
   line-height: 1.5rem;
 }
 
+.monthly-total {
+  font-size: 2rem;
+  margin-top: 0.2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+}
+
 .attribution {
   padding-block-end: 1.5rem;
   font-size: 0.85rem;
@@ -97,13 +121,4 @@ main {
 .attribution,
 a {
   color: hsl(228, 45%, 44%);
-}
-
-.right {
-  align-self: flex-end;
-  text-align: right;
-}
-
-.right h4 {
-  font-size: 0.77rem;
 }

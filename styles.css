@@ -3,12 +3,7 @@
 /* Use CSS reset */
 /* https://meyerweb.com/eric/tools/css/reset/ */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  /* Set font-family on html*/
+html {
   font-family: "DM Sans";
 }
 
@@ -31,9 +26,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* Remove duplicate rule */
-  min-height: 100vh;
   gap: 0.55rem;
 }
 

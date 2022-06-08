@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Accesibility report #3 -->
+      <!-- Each HTML document should have an <h1> -->
+      <!-- describing the page content -->
+      <!-- Optionally, the heading element can be a child of a <header> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <!-- <link rel="stylesheet" href="reset.css"> -->
-  <link rel="stylesheet" href="styles.css" />
-  <title>Frontend Mentor | Expenses chart component</title>
-</head>
-
-<body>
-  <!-- Accesibility report #3 -->
-  <!-- Each HTML document should have an <h1> -->
-  <!-- describing the page content -->
-  <!-- Optionally, the heading element can be a child of a <header> -->
-
-  <!-- Accesibility report #2 -->
-  <!-- Page content should be grouped under a <main> element -->
-  <article>
-    <!-- HTML report #1 -->
-    <!-- This section can be converted into a <header> -->
-    <!-- Make sure to use appropriate heading given the scale -->
-    <section class="balance">
-      <div>
-        <p>My balance</p>
-        <!-- Accesibility report #1 -->
-        <!-- Make sure you use the following heading elements -->
-        <!-- using each step of the scale (e.g. h1 - h6) -->
-        <h3>$921.48</h3>
-      </div>
-      <img src="./images/logo.svg" alt="logo" />
-    </section>
-
-    <!-- This <section> can be converted to an <article> -->
-    <!-- Make sure to add a heading element -->
-    <section class="spendings">
-      <div>
-        <h3>Spending - Last 7 days</h3>
-        <canvas id="myChart"></canvas>
-      </div>
-      <div class="stats">
-        <div>
-          <p>Total this month</p>
-          <h2>$478.33</h2>
-        </div>
-        <div class="right">
-          <h4>+2.4%</h4>
-          <p>from last month</p>
-        </div>
-      </div>
-    </section>
-  </article>
-
-  <footer class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      href="#">Iuliana J</a>.
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
-  <script src="index.js"></script>
-</body>
-
+      <!-- Accesibility report #2 -->
+      <!-- Page content should be grouped under a <main> element -->
+      <article>
+        <h1>Frontend Mentor | Expenses chart component</h1>
+        <!-- HTML report #1 -->
+        <!-- This section can be converted into a <header> -->
+        <!-- Make sure to use appropriate heading given the scale -->
+        <header class="balance">
+          <div>
+            <p>My balance</p>
+            <!-- Accesibility report #1 -->
+            <!-- Make sure you use the following heading elements -->
+            <!-- using each step of the scale (e.g. h1 - h6) -->
+            <h2>$921.48</h2>
+          </div>
+          <img src="./images/logo.svg" alt="logo" />
+        </header>
+        <!-- This <section> can be converted to an <article> -->
+        <!-- Make sure to add a heading element -->
+        <article class="spendings">
+          <h3>Spending - Last 7 days</h3>
+          <canvas id="myChart"></canvas>
+          <div class="stats">
+            <div>
+              <p>Total this month</p>
+              <h2>$478.33</h2>
+            </div>
+            <div class="right">
+              <h3>+2.4%</h3>
+              <p>from last month</p>
+            </div>
+          </div>
+        </article>
+      </article>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Iuliana J</a>.
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+      <script src="index.js"></script>
+    </main>
+  </body>
 </html>
